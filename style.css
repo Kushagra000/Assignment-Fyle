@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#userProfile img {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+#repositories {
+    margin: 20px;
+    display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+}
+
+.repo {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.repo a {
+    text-decoration: none;
+    color: #0366d6;
+}
+
+
+/* my edits */
+/* Header */
+.headContainer {
+    display: flex;
+  }
+
+  .profilePic {
+    flex: 1;    
+    padding: 10px;
+  }
+
+  .profileData {
+    flex: 2;
+    
+    padding: 10px;
+  }
+  .user, h5{
+    margin: 5px;
+  }
+  p{
+    font-size: smaller;
+  }
+
+  .profileData h5 a {
+    color: black;
+    font-weight:500;
+    text-decoration: none;
+  }
+  .profilePic div a {
+    color: black;
+    font-size: 12px;
+    font-weight:600;
+    text-decoration: none;
+
+  }
+
+  .repo p strong {
+    background-color: #0366d6;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  .button_next_prev{
+    padding-left: 90px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  #prevButton , #nextButton{
+    padding: 7px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 15px;
+  }
+  #prevButton:hover , #nextButton:hover{
+    background-color: #f4f4f4;
+  }
+  .pageNum{
+    border: 1px solid gray;
+    padding: 10px;
+    
+
+  }
+  #pagination{
+    display: flex;
+    margin: auto;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Add your existing styles here */
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ 
