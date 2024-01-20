@@ -1,5 +1,5 @@
     document.addEventListener("DOMContentLoaded", function () {
-        const username = "codERSunny812";
+        const username = "Kushagra000";
         const userProfileElement = document.getElementById("userProfile");
         const repositoriesElement = document.getElementById("repositories");
         const nextButton = document.getElementById("nextButton");
